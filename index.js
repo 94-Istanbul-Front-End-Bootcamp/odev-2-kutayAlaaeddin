@@ -22,7 +22,7 @@ const listData = (data) => {
 	list.innerHTML = data.map((element) => {
 		return `
         <li class="list-group-item" id=${element.id}>
-            <span class='bold'>name:</span> ${element.name}   ${element.age}   </li>
+            <span class='bold'>name:</span> ${element.name} Age:  ${element.age}   </li>
       
 
         `;
