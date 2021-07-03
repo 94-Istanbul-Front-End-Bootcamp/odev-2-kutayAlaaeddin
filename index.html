@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odev 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+    <div class="wrapper text-center">
+        <button class="btn bg-dark text-white" onclick="fetchData()">Getir</button>
+        <button class="btn bg-danger text-white " onclick="filterData()" id="filterButton" disabled>Filtrele</button><br/>
+        <input onclick="hasChange()" class='show input-group-prepend' type="checkbox" id="item1"style="display: none;">
+        <label class='show input-group-text' for="item1" style="display: none;">Raşit kullanıcıları getir </label><br>
+        <input onclick="hasChange()" class='show input-group-text' type="checkbox" id="item2" style="display: none;">
+        <label class='show input-group-text' for="item2" style="display: none;"> Aktifleri getir</label><br>
+        <input class='show text-white bg-warning' type="text" id="fname" name="fname"  placeholder="ismin ilk harfini girin" id='txtBox'  style="display: none;" maxlength="1" onchange="onclickhandler(this)"><br>
+        <ul class="list list-group "></ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
