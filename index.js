@@ -40,7 +40,7 @@ const filterData = () => {
 
 function hasChange() {
 	//her iki seçenek de seçildiği durum
-    document.getElementById('txtBox').value
+   
     if (document.getElementById('item1').checked && document.getElementById('item2').checked) {
         let filteredData = data.filter((element) => element.age >= 18 && element.isActive);
         listData(filteredData);
